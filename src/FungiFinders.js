@@ -108,6 +108,8 @@ const mushroomData = [
     description: "Pale green to white cap with white gills",
     notes: "Extremely toxic - study for safety awareness",
   },
+
+  
 ];
 const cardsData = [
   {
@@ -143,9 +145,17 @@ const cardsData = [
 
 const FungiFinders = () => {
   return (
-    <div className="bg-stone-800">
-      <div className="flex items-center justify-between lg:px-12 px-4">
-        <img src="/img/heading.png" alt="img" />
+    <div className="bg-stone-800 ">
+      <div className="flex items-center justify-between  lg:px-12 px-4">
+        <img className="pt-4 pb-3" src="/img/heading.png" alt="img" />
+        <div className="md:hidden">
+        <svg width="31" height="14" viewBox="0 0 31 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <rect width="31" height="2" rx="1" fill="#D9D9D9"/>
+         <rect y="6" width="31" height="2" rx="1" fill="#D9D9D9"/>
+         <rect y="12" width="31" height="2" rx="1" fill="#D9D9D9"/>  
+          </svg>
+
+        </div>
         <div className="md:flex hidden  gap-8 text-[#CBC9C9] pt-[22px] pb-[18px]">
           <p className="font-semibold text-base leading-5 font-sans cursor-pointer">
             Discover
@@ -162,52 +172,52 @@ const FungiFinders = () => {
         className="h-screen w-screen bg-cover bg-center"
         style={{ backgroundImage: "url('img/bg2.jpg')" }}
       >
-        <div className="flex flex-col justify-center items-center lg:pt-[72px]">
-          <h1 className="font-bold  lg:text-[120px] text-[60px]  text-white text-center max-w-[981px] w-full ">
+        <div className="flex flex-col justify-center gap-8 items-center lg:pt-[72px] pt-[72px] px-4">
+          <h1 className="font-bold  lg:text-7xl text-[60px]  text-white text-center max-w-[981px] w-full text-6xl flex flex-col gap-4">
             Quick reference{" "}
-            <span className="font-bold  text-orange-400">Mushroom Guide</span>
+            <span className="font-bold  text-orange-400 lg:text-[120px] ">Mushroom Guide</span>
           </h1>
-          <div className=" max-w-[322px] md:max-w-[720px] w-full flex flex-col gap-6 justify-center items-center text-center">
-            <p className="font-normal text-xl/8 text-white font-sans">
+          <div className=" max-w-[322px] md:max-w-[720px] w-full flex flex-col gap-6 justify-center items-center text-center ">
+            <p className="font-normal lg:text-xl/8 text-white font-sans text-lg">
               Mushroom foraging is the art and science of identifying and
               collecting wild mushrooms.{" "}
             </p>
-            <p className="font-normal text-xl/8 text-white font-sans">
+            <p className="font-normal lg:text-xl/8 text-white font-sans text-lg">
               It's a practice that combines outdoor exploration, botanical
               knowledge, and culinary adventure. Foragers venture into forests,
               fields, and even urban green spaces to discover these hidden
               treasures.{" "}
             </p>
-            <p className="font-normal text-xl/8 text-white font-sans">
+            <p className="font-normal lg:text-xl/8 text-white font-sans text-lg">
               But beware – this hobby requires careful study and respect for
               nature, as some mushrooms can be dangerous if misidentified.
             </p>
           </div>
         </div>
       </div>
-      <div class="flex flex-col px-4 lg:flex-row md:flex-col  items-center justify-center gap-12 lg:py-[128px]   bg-green-900">
+      <div class="flex flex-col px-4 lg:flex-row md:flex-col  items-center justify-center lg:gap-12 lg:py-[128px] py-16   bg-green-900">
         <img src="/img/img.1.png" alt="img" />+
         
-        <div className="max-w-[393px]  md:max-w-[541px] w-full flex flex-col gap-3 text-center">
-          <h1 className="text-white font-bold  lg:text-5xl text-[36px] leading-[52.8px] font-sans">
+        <div className="max-w-[393px]  md:max-w-[541px] w-full flex flex-col gap-3  text-start lg:text-center">
+          <h1 className="text-white font-bold  lg:text-5xl text-[36px] leading-[52.8px] font-sans text-4xl">
             Where to look
           </h1>
           <div className="flex flex-col gap-6 ">
-            <p className="font-normal text-xl/8 text-white font-sans">
+            <p className="font-normal lg:text-xl/8  font-sans text-lg text-[#CBC9C9]">
               Different species grow in different types of environments.{" "}
             </p>
-            <p className="font-normal text-xl/8 text-white font-sans">
+            <p className="font-normal lg:text-xl/8  font-sans text-lg text-[#CBC9C9]">
               Forests are always a good starting place, though, with a wide
               range of species that grow in them.{" "}
             </p>
-            <p className="font-normal text-xl/8 text-white font-sans">
+            <p className="font-normal lg:text-xl/8 font-sans text-lg text-[#CBC9C9]">
               If you’re after something specific, you can use our reference
               guide below to help you out.
             </p>
           </div>
         </div>
       </div>
-      <div className="flex flex-col mx-auto w-full max-w-[1175px] py-[128px]">
+      <div className="flex flex-col mx-auto w-full max-w-[1175px] lg:py-[128px]  py-16 px-4">
         <div className="flex flex-col justify-start items-start gap-[21px] text-start">
           <p className="text-white font-bold lg:text-5xl text-[36px] leading-[52px]">
             Get to know your mushrooms
@@ -284,7 +294,7 @@ const FungiFinders = () => {
         </div>
       </div>
 
-<div className=" bg-stone-900  py-[128px] text-start">
+<div className=" bg-stone-900  lg:py-[128px] text-start py-16 px-4">
       <div className="max-w-[1344px] mx-auto  flex flex-col gap-6 ">
         <p className="text-white font-bold lg:text-5xl text-[36px] leading-[52px]">
           Frequently Asked Questions
@@ -316,9 +326,13 @@ const FungiFinders = () => {
     <p class="text-sm leading-6 font-bold text-stone-300">Happy Foraging!</p>
     <p class="text-sm leading-6 font-bold text-stone-300">contact@fungifinders.com</p>
   </div>
+
+  
       
-    </div>
-  );
+  </div>
+);
+
+  
 };
 
 export default FungiFinders;
