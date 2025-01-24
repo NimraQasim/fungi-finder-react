@@ -146,7 +146,7 @@ const cardsData = [
 const FungiFinders = () => {
   return (
     <div className="bg-stone-800 ">
-      <div className="flex items-center justify-between  lg:px-12 px-4">
+      <div className="flex  items-center justify-between  lg:px-12 px-4">
         <img className="pt-4 pb-3" src="/img/heading.png" alt="img" />
         <div className="md:hidden">
         <svg width="31" height="14" viewBox="0 0 31 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -169,10 +169,10 @@ const FungiFinders = () => {
         </div>
       </div>
       <div
-        className="h-screen w-screen bg-cover bg-center"
+        className=" w-full w-screen bg-cover bg-center"
         style={{ backgroundImage: "url('img/bg2.jpg')" }}
       >
-        <div className="flex flex-col justify-center gap-8 items-center lg:pt-[72px] pt-[72px] px-4">
+        <div className="flex flex-col justify-center gap-8 items-center lg:py-[72px] py-[72px] px-4">
           <h1 className="font-bold  lg:text-7xl text-[60px]  text-white text-center max-w-[981px] w-full text-6xl flex flex-col gap-4">
             Quick reference{" "}
             <span className="font-bold  text-orange-400 lg:text-[120px] ">Mushroom Guide</span>
