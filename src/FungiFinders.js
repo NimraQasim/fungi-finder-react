@@ -12,8 +12,8 @@ const mushroomData = [
   {
     title: "Chanterelle",
     tags: [
-      { label: "edible", bgColor: "bg-green-700" },
-      { label: "summer", bgColor: "bg-green-700" },
+      { label: "edible", bgColor: "bg-pink-900" },
+      { label: "summer", bgColor: "bg-cyan-700" },
     ],
     description: "Golden-yellow, funnel-shaped mushroom with false gills",
     notes: "Has toxic look-alikes - learn proper identification",
@@ -31,7 +31,7 @@ const mushroomData = [
     title: "Death Cap",
     tags: [
       { label: "toxic", bgColor: "bg-pink-900" },
-      { label: "summer", bgColor: "bg-cyan-700" },
+      { label: "summer", bgColor: "bg-green-700" },
     ],
     description: "Pale green to white cap with white gills",
     notes: "Extremely toxic - study for safety awareness",
@@ -40,7 +40,7 @@ const mushroomData = [
     title: "Chanterelle",
     tags: [
       { label: "edible", bgColor: "bg-green-700" },
-      { label: "summer", bgColor: "bg-green-700" },
+      { label: "summer", bgColor: "bg-yellow-800" },
     ],
     description: "Golden-yellow, funnel-shaped mushroom with false gills",
     notes: "Has toxic look-alikes - learn proper identification",
@@ -49,7 +49,7 @@ const mushroomData = [
     title: "Chanterelle",
     tags: [
       { label: "edible", bgColor: "bg-green-700" },
-      { label: "summer", bgColor: "bg-green-700" },
+      { label: "summer", bgColor: "bg-yellow-800" },
     ],
     description: "Golden-yellow, funnel-shaped mushroom with false gills",
     notes: "Has toxic look-alikes - learn proper identification",
@@ -57,7 +57,7 @@ const mushroomData = [
   {
     title: "Chanterelle",
     tags: [
-      { label: "edible", bgColor: "bg-green-700" },
+      { label: "edible", bgColor: "bg-pink-900" },
       { label: "summer", bgColor: "bg-green-700" },
     ],
     description: "Golden-yellow, funnel-shaped mushroom with false gills",
@@ -66,8 +66,8 @@ const mushroomData = [
   {
     title: "Death Cap",
     tags: [
-      { label: "toxic", bgColor: "bg-pink-900" },
-      { label: "summer", bgColor: "bg-cyan-700" },
+      { label: "toxic", bgColor: "bg-green-700" },
+      { label: "summer", bgColor: "bg-green-700" },
     ],
     description: "Pale green to white cap with white gills",
     notes: "Extremely toxic - study for safety awareness",
@@ -76,7 +76,7 @@ const mushroomData = [
     title: "Chanterelle",
     tags: [
       { label: "edible", bgColor: "bg-green-700" },
-      { label: "summer", bgColor: "bg-green-700" },
+      { label: "summer", bgColor: "bg-yellow-800" },
     ],
     description: "Golden-yellow, funnel-shaped mushroom with false gills",
     notes: "Has toxic look-alikes - learn proper identification",
@@ -85,7 +85,7 @@ const mushroomData = [
     title: "Chanterelle",
     tags: [
       { label: "edible", bgColor: "bg-green-700" },
-      { label: "summer", bgColor: "bg-green-700" },
+      { label: "summer", bgColor: "bg-yellow-800" },
     ],
     description: "Golden-yellow, funnel-shaped mushroom with false gills",
     notes: "Has toxic look-alikes - learn proper identification",
@@ -93,8 +93,8 @@ const mushroomData = [
   {
     title: "Chanterelle",
     tags: [
-      { label: "edible", bgColor: "bg-green-700" },
-      { label: "summer", bgColor: "bg-green-700" },
+      { label: "edible", bgColor: "bg-pink-900" },
+      { label: "summer", bgColor: "bg-cyan-700" },
     ],
     description: "Golden-yellow, funnel-shaped mushroom with false gills",
     notes: "Has toxic look-alikes - learn proper identification",
@@ -102,8 +102,8 @@ const mushroomData = [
   {
     title: "Death Cap",
     tags: [
-      { label: "toxic", bgColor: "bg-pink-900" },
-      { label: "summer", bgColor: "bg-cyan-700" },
+      { label: "toxic", bgColor: "bg-green-900" },
+      { label: "summer", bgColor: "bg-pink-900" },
     ],
     description: "Pale green to white cap with white gills",
     notes: "Extremely toxic - study for safety awareness",
@@ -169,9 +169,7 @@ const FungiFinders = () => {
         </div>
       </div>
       <div
-        className=" w-full w-screen bg-cover bg-center"
-        style={{ backgroundImage: "url('img/bg2.jpg')" }}
-      >
+        className="w-full bg-cover bg-center"style={{ backgroundImage: "url('img/bg2.jpg')" }}>
         <div className="flex flex-col justify-center gap-8 items-center lg:py-[72px] py-[72px] px-4">
           <h1 className="font-bold  lg:text-7xl text-[60px]  text-white text-center max-w-[981px] w-full text-6xl flex flex-col gap-4">
             Quick reference{" "}
@@ -196,7 +194,7 @@ const FungiFinders = () => {
         </div>
       </div>
       <div class="flex flex-col px-4 lg:flex-row md:flex-col  items-center justify-center lg:gap-12 lg:py-[128px] py-16   bg-green-900">
-        <img src="/img/img.1.png" alt="img" />+
+        <img src="/img/img.1.png" alt="img" />
         
         <div className="max-w-[393px]  md:max-w-[541px] w-full flex flex-col gap-3  text-start lg:text-center">
           <h1 className="text-white font-bold  lg:text-5xl text-[36px] leading-[52.8px] font-sans text-4xl">
@@ -293,8 +291,7 @@ const FungiFinders = () => {
           ))}
         </div>
       </div>
-
-<div className=" bg-stone-900  lg:py-[128px] text-start py-16 px-4">
+      <div className=" bg-stone-900  lg:py-[128px] text-start py-16 px-4">
       <div className="max-w-[1344px] mx-auto  flex flex-col gap-6 ">
         <p className="text-white font-bold lg:text-5xl text-[36px] leading-[52px]">
           Frequently Asked Questions
@@ -326,13 +323,8 @@ const FungiFinders = () => {
     <p class="text-sm leading-6 font-bold text-stone-300">Happy Foraging!</p>
     <p class="text-sm leading-6 font-bold text-stone-300">contact@fungifinders.com</p>
   </div>
-
-  
-      
   </div>
-);
-
-  
+); 
 };
 
 export default FungiFinders;
